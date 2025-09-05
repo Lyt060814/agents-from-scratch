@@ -105,7 +105,7 @@ Arguments:"""
             display += f"\n{tool_call['args']}\n"
     return display
 
-def parse_email(email_input: dict) -> dict:
+def parse_email(email_input: dict) -> tuple[str, str, str, str]:
     """Parse an email input dictionary.
 
     Args:
